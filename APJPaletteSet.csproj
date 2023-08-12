@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F92C1BB-FADB-4DF2-8FF8-F28391C1ED3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APJPaletteSet</RootNamespace>
+    <AssemblyName>APJPaletteSet</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcCoreMgd, Version=24.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Autodesk\ObjectARX_for_AutoCAD_2024_Win_64bit_dlm\inc\AcCoreMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcDbMgd, Version=24.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Autodesk\ObjectARX_for_AutoCAD_2024_Win_64bit_dlm\inc\AcDbMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcMgd, Version=24.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Autodesk\ObjectARX_for_AutoCAD_2024_Win_64bit_dlm\inc\AcMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AecArchMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecArchMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AecBaseMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecBaseMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AecBaseUtilsMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecBaseUtilsMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AecProjectBaseMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecProjectBaseMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyTooltips.cs" />
+    <Compile Include="ComplementaresPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComplementaresPalette.Designer.cs">
+      <DependentUpon>ComplementaresPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListasEsquadriasPalette .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListasEsquadriasPalette .Designer.cs">
+      <DependentUpon>ListasEsquadriasPalette .cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasLegendaPalette .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListasLegendaPalette .Designer.cs">
+      <DependentUpon>ListasLegendaPalette .cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasTetoPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListasTetoPalette.Designer.cs">
+      <DependentUpon>ListasTetoPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasParedePalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListasParedePalette.Designer.cs">
+      <DependentUpon>ListasParedePalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasPisoPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListasPisoPalette.Designer.cs">
+      <DependentUpon>ListasPisoPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatEsquadriasPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatEsquadriasPalette.Designer.cs">
+      <DependentUpon>MatEsquadriasPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatLegendaPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatLegendaPalette.Designer.cs">
+      <DependentUpon>MatLegendaPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FornecedoresPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FornecedoresPalette.Designer.cs">
+      <DependentUpon>FornecedoresPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatParedePalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatParedePalette.Designer.cs">
+      <DependentUpon>MatParedePalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatPisoPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatPisoPalette.Designer.cs">
+      <DependentUpon>MatPisoPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasProjetoPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListasProjetoPalette.Designer.cs">
+      <DependentUpon>ListasProjetoPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatTetoPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatTetoPalette.Designer.cs">
+      <DependentUpon>MatTetoPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyEvents.cs" />
+    <Compile Include="MyFormats.cs" />
+    <Compile Include="MyProject.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropriedadePalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropriedadePalette.Designer.cs">
+      <DependentUpon>PropriedadePalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCommands.cs" />
+    <Compile Include="MyPaletteSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ObraPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObraPalette.Designer.cs">
+      <DependentUpon>ObraPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XMLDocs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComplementaresPalette.resx">
+      <DependentUpon>ComplementaresPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasEsquadriasPalette .resx">
+      <DependentUpon>ListasEsquadriasPalette .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasLegendaPalette .resx">
+      <DependentUpon>ListasLegendaPalette .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasTetoPalette.resx">
+      <DependentUpon>ListasTetoPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasParedePalette.resx">
+      <DependentUpon>ListasParedePalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasPisoPalette.resx">
+      <DependentUpon>ListasPisoPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatEsquadriasPalette.resx">
+      <DependentUpon>MatEsquadriasPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatLegendaPalette.resx">
+      <DependentUpon>MatLegendaPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FornecedoresPalette.resx">
+      <DependentUpon>FornecedoresPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatParedePalette.resx">
+      <DependentUpon>MatParedePalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatPisoPalette.resx">
+      <DependentUpon>MatPisoPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasProjetoPalette.resx">
+      <DependentUpon>ListasProjetoPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatTetoPalette.resx">
+      <DependentUpon>MatTetoPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropriedadePalette.resx">
+      <DependentUpon>PropriedadePalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObraPalette.resx">
+      <DependentUpon>ObraPalette.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\APJPaletteSet.MyCommands.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\refreshNull.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
