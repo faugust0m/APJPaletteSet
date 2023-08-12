@@ -9,6 +9,8 @@ namespace APJPaletteSet
     partial class ObraPalette
     {
         private IContainer components = null;
+        string bk = "\n";
+        string bp = ";\n";
         #region Lista de Controles
         private Panel panel;
         private Label label;
@@ -255,10 +257,8 @@ namespace APJPaletteSet
             this.label_2_0.Text = "Setor/Região:";
             this.textBox_2_0.Name = "textBox_2_0";
             MyEvents.TextBoxEvents(textBox_2_0);
-            string tooltip_2_0 = "Determine o setor ou região do projeto\n" +
-                                 "\n" +
-                                 "(Informação utilizada no preenchimento\n" +
-                                 "automático dos selos de aprovação)";
+            string tooltip_2_0 = MyTooltips.TextBox("o setor ou região do projeto") + bk +
+                                 MyTooltips.SelosAp();
             this.toolTip_2_0.SetToolTip(this.label_2_0, tooltip_2_0);
             this.toolTip_2_0.SetToolTip(this.textBox_2_0, tooltip_2_0);
 
@@ -266,10 +266,8 @@ namespace APJPaletteSet
             this.label_2_1.Text = "Endereço:";
             this.textBox_2_1.Name = "textBox_2_1";
             MyEvents.TextBoxEvents(textBox_2_1);
-            string tooltip_2_1 = "Determine o endereço do projeto\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos)";
+            string tooltip_2_1 = MyTooltips.TextBox("o endereço do projeto") + bk +
+                                 MyTooltips.Selos();
             this.toolTip_2_1.SetToolTip(this.label_2_1, tooltip_2_1);
             this.toolTip_2_1.SetToolTip(this.textBox_2_1, tooltip_2_1);
 
@@ -277,8 +275,7 @@ namespace APJPaletteSet
             this.label_2_2.Text = "Condomínio:";
             this.textBox_2_2.Name = "textBox_2_2";
             MyEvents.TextBoxEvents(textBox_2_2);
-            string tooltip_2_2 = "Determine o condomínio onde\n" +
-                                 "se localiza o projeto";
+            string tooltip_2_2 = MyTooltips.TextBox("o condomínio onde se localiza o projeto");
             this.toolTip_2_2.SetToolTip(this.label_2_2, tooltip_2_2);
             this.toolTip_2_2.SetToolTip(this.textBox_2_2, tooltip_2_2);
 
@@ -286,8 +283,7 @@ namespace APJPaletteSet
             this.label_2_3.Text = "Bairro:";
             this.textBox_2_3.Name = "textBox_2_3";
             MyEvents.TextBoxEvents(textBox_2_3);
-            string tooltip_2_3 = "Determine o bairro onde\n" +
-                                 "se localiza o projeto";
+            string tooltip_2_3 = MyTooltips.TextBox("o bairro onde se localiza o projeto");
             this.toolTip_2_3.SetToolTip(this.label_2_3, tooltip_2_3);
             this.toolTip_2_3.SetToolTip(this.textBox_2_3, tooltip_2_3);
 
@@ -295,8 +291,7 @@ namespace APJPaletteSet
             this.label_2_4.Text = "Quadra:";
             this.textBox_2_4.Name = "textBox_2_4";
             MyEvents.TextBoxEvents(textBox_2_4);
-            string tooltip_2_4 = "Determine a quadra onde\n" +
-                                 "se localiza o projeto";
+            string tooltip_2_4 = MyTooltips.TextBox("a quadra onde se localiza o projeto");
             this.toolTip_2_4.SetToolTip(this.label_2_4, tooltip_2_4);
             this.toolTip_2_4.SetToolTip(this.textBox_2_4, tooltip_2_4);
 
@@ -304,8 +299,7 @@ namespace APJPaletteSet
             this.label_2_5.Text = "Via:";
             this.textBox_2_5.Name = "textBox_2_5";
             MyEvents.TextBoxEvents(textBox_2_5);
-            string tooltip_2_5 = "Determine a via principal onde\n" +
-                                 "se localiza o projeto";
+            string tooltip_2_5 = MyTooltips.TextBox("a via principal onde se localiza o projeto");
             this.toolTip_2_5.SetToolTip(this.label_2_5, tooltip_2_5);
             this.toolTip_2_5.SetToolTip(this.textBox_2_5, tooltip_2_5);
 
@@ -313,8 +307,7 @@ namespace APJPaletteSet
             this.label_2_6.Text = "Lote:";
             this.textBox_2_6.Name = "textBox_2_6";
             MyEvents.TextBoxEvents(textBox_2_6);
-            string tooltip_2_6 = "Determine o lote onde\n" +
-                                 "se localiza o projeto";
+            string tooltip_2_6 = MyTooltips.TextBox("o lote onde se localiza o projeto");
             this.toolTip_2_6.SetToolTip(this.label_2_6, tooltip_2_6);
             this.toolTip_2_6.SetToolTip(this.textBox_2_6, tooltip_2_6);
 
@@ -322,8 +315,7 @@ namespace APJPaletteSet
             this.label_2_7.Text = "Complem.:";
             this.textBox_2_7.Name = "textBox_2_7";
             MyEvents.TextBoxEvents(textBox_2_7);
-            string tooltip_2_7 = "Determine o complemento do endereço\n" +
-                                 "onde se localiza o projeto";
+            string tooltip_2_7 = MyTooltips.TextBox("o complemento do endereço onde se localiza o projeto");
             this.toolTip_2_7.SetToolTip(this.label_2_7, tooltip_2_7);
             this.toolTip_2_7.SetToolTip(this.textBox_2_7, tooltip_2_7);
 
@@ -331,8 +323,7 @@ namespace APJPaletteSet
             this.label_2_8.Text = "Cidade:";
             this.textBox_2_8.Name = "textBox_2_8";
             MyEvents.TextBoxEvents(textBox_2_8);
-            string tooltip_2_8 = "Determine a cidade onde\n" +
-                                 "se localiza o projeto";
+            string tooltip_2_8 = MyTooltips.TextBox("a cidade onde se localiza o projeto");
             this.toolTip_2_8.SetToolTip(this.label_2_8, tooltip_2_8);
             this.toolTip_2_8.SetToolTip(this.textBox_2_8, tooltip_2_8);
 
@@ -340,13 +331,12 @@ namespace APJPaletteSet
             this.label_2_9.Text = "Estado:";
             this.textBox_2_9.Name = "textBox_2_9";
             MyEvents.TextBoxEvents(textBox_2_9);
-            string tooltip_2_9 = "Determine o estado onde\n" +
-                                 "se localiza o projeto";
+            string tooltip_2_9 = MyTooltips.TextBox("o estado onde se localiza o projeto");
             this.toolTip_2_9.SetToolTip(this.label_2_9, tooltip_2_9);
             this.toolTip_2_9.SetToolTip(this.textBox_2_9, tooltip_2_9);
 
             #endregion
-            #region groupBox_1
+            #region groupBox_1 Taxas
             this.groupBox_1.Controls.Add(this.label_2_22);
             this.groupBox_1.Controls.Add(this.textBox_2_22);
             this.groupBox_1.Controls.Add(this.label_2_23);
@@ -369,11 +359,8 @@ namespace APJPaletteSet
             this.label_2_22.Text = "Área do terreno:";
             this.textBox_2_22.Name = "textBox_2_22";
             MyEvents.TextBoxEvents(textBox_2_22);
-            string tooltip_2_22 = "Determine a área do terreno onde será\n" +
-                                  "construído o projeto\n" +
-                                  "\n" +
-                                  "(em metros quadrados com decimais\n" +
-                                  "separados por . 'ponto')";
+            string tooltip_2_22 = MyTooltips.TextBox("a área do terreno onde será construído o projeto") + bk +
+                                  "(metros quadrados, com decimais separados por . 'ponto')";
             this.toolTip_2_22.SetToolTip(this.label_2_22, tooltip_2_22);
             this.toolTip_2_22.SetToolTip(this.textBox_2_22, tooltip_2_22);
 
@@ -381,10 +368,8 @@ namespace APJPaletteSet
             this.label_2_23.Text = "Ocupação:";
             this.textBox_2_23.Name = "textBox_2_23";
             MyEvents.TextBoxEvents(textBox_2_23);
-            string tooltip_2_23 = "Determine a taxa de ocupação máxima\n" +
-                                  "em relação à área do terreno\n" +
-                                  "\n" +
-                                  "(porcentagem entre 0 e 100, ex.: 25)";
+            string tooltip_2_23 = MyTooltips.TextBox("a área máxima de projeção da construção sobre a área do terreno") + bk +
+                                  "(porcentagem, número de 0 a 100, ex.: 50)";
             this.toolTip_2_23.SetToolTip(this.label_2_23, tooltip_2_23);
             this.toolTip_2_23.SetToolTip(this.textBox_2_23, tooltip_2_23);
 
@@ -392,12 +377,8 @@ namespace APJPaletteSet
             this.label_2_24.Text = "Aproveitamento:";
             this.textBox_2_24.Name = "textBox_2_24";
             MyEvents.TextBoxEvents(textBox_2_24);
-            string tooltip_2_24 = "Determine a taxa de aproveitamento\n" +
-                                  "(área de construção total em\n" +
-                                  "relação à área do terreno)\n" +
-                                  "\n" +
-                                  "(converter índice para porcentagem\n" +
-                                  "ex.: 1.5 deve ser inserido como 150)";
+            string tooltip_2_24 = MyTooltips.TextBox("a área máxima de construção em relação à área do terreno") + bk +
+                                  "(converter índice para porcentagem, ex.: 1,5 deve ser inserido como 150)";
             this.toolTip_2_24.SetToolTip(this.label_2_24, tooltip_2_24);
             this.toolTip_2_24.SetToolTip(this.textBox_2_24, tooltip_2_24);
 
@@ -405,11 +386,8 @@ namespace APJPaletteSet
             this.label_2_25.Text = "Permeabilidade:";
             this.textBox_2_25.Name = "textBox_2_25";
             MyEvents.TextBoxEvents(textBox_2_25);
-            string tooltip_2_25 = "Determine a taxa de permeabilidade\n" +
-                                  "(área permeável total em\n" +
-                                  "relação à área do terreno)\n" +
-                                  "\n" +
-                                  "(porcentagem entre 0 e 100, ex.: 30)";
+            string tooltip_2_25 = MyTooltips.TextBox("a área de permeabilidade mínima em relação à área do terreno") + bk +
+                                  "(porcentagem, número de 0 a 100, ex.: 30)";
             this.toolTip_2_25.SetToolTip(this.label_2_25, tooltip_2_25);
             this.toolTip_2_25.SetToolTip(this.textBox_2_25, tooltip_2_25);
 
@@ -425,7 +403,7 @@ namespace APJPaletteSet
             this.label_2_25s.Name = "label_2_25s";
             this.label_2_25s.Text = "%";
             #endregion
-            #region groupBox_2
+            #region groupBox_2 Níveis
             this.groupBox_2.Controls.Add(this.label_2_26);
             this.groupBox_2.Controls.Add(this.textBox_2_26);
             this.groupBox_2.Controls.Add(this.label_2_27);
@@ -448,11 +426,8 @@ namespace APJPaletteSet
             this.label_2_26.Text = "Nível Base:";
             this.textBox_2_26.Name = "textBox_2_26";
             MyEvents.TextBoxEvents(textBox_2_26);
-            string tooltip_2_26 = "Determine o valor a ser considerado como nível 0\n" +
-                                  "pelo gerenciador de projeto ('Levels')\n" +
-                                  "\n" +
-                                  "(em centímetros com decimais\n" +
-                                  "separados por . 'ponto')";
+            string tooltip_2_26 = MyTooltips.TextBox("o valor a ser considerado como nível 0 pelo gerenciador de projeto - Levels") + bk +
+                                  "(centímetros, com decimais separados por . 'ponto')";
             this.toolTip_2_26.SetToolTip(this.label_2_26, tooltip_2_26);
             this.toolTip_2_26.SetToolTip(this.textBox_2_26, tooltip_2_26);
 
@@ -460,12 +435,9 @@ namespace APJPaletteSet
             this.label_2_27.Text = "Nível Topografia:";
             this.textBox_2_27.Name = "textBox_2_27";
             MyEvents.TextBoxEvents(textBox_2_27);
-            string tooltip_2_27 = "Determine o nível topográfico a ser referenciado\n" +
-                                  "como nível Z = 0 pelo gerenciador de projeto\n" +
-                                  "nas cotas topográficas e de soleira\n" +
-                                  "\n" +
-                                  "(em metros com decimais\n" +
-                                  "separados por . 'ponto')";
+            string tooltip_2_27 = MyTooltips.TextBox("o nível topográfico a ser referenciado como nível Z = 0 pelo gerenciador de projeto") + bk +
+                                  "nas cotas topográficas e de soleira" + bk +
+                                  "(metros, com decimais separados por . 'ponto')";
             this.toolTip_2_27.SetToolTip(this.label_2_27, tooltip_2_27);
             this.toolTip_2_27.SetToolTip(this.textBox_2_27, tooltip_2_27);
 
@@ -473,11 +445,8 @@ namespace APJPaletteSet
             this.label_2_28.Text = "Cota de Soleira:";
             this.textBox_2_28.Name = "textBox_2_28";
             MyEvents.TextBoxEvents(textBox_2_28);
-            string tooltip_2_28 = "Determine o nível topográfico a ser referenciado\n" +
-                                  "como cota de soleira\n" +
-                                  "\n" +
-                                  "(em metros com decimais\n" +
-                                  "separados por . 'ponto')";
+            string tooltip_2_28 = MyTooltips.TextBox("o nível topográfico a ser referenciado como cota de soleira") + bk +
+                                  "(metros, com decimais separados por . 'ponto')";
             this.toolTip_2_28.SetToolTip(this.label_2_28, tooltip_2_28);
             this.toolTip_2_28.SetToolTip(this.textBox_2_28, tooltip_2_28);
 
@@ -485,11 +454,8 @@ namespace APJPaletteSet
             this.label_2_29.Text = "Coordenada X:";
             this.textBox_2_29.Name = "textBox_2_29";
             MyEvents.TextBoxEvents(textBox_2_29);
-            string tooltip_2_29 = "Determine a coordenada X do ponto\n" +
-                                  "de origem (X = 0) do terreno\n" +
-                                  "\n" +
-                                  "(número com decimais\n" +
-                                  "separados por . 'ponto')";
+            string tooltip_2_29 = MyTooltips.TextBox("a coordenada X do ponto de origem (X = 0) do terreno") + bk +
+                                  "(número, com decimais separados por . 'ponto')";
             this.toolTip_2_29.SetToolTip(this.label_2_29, tooltip_2_29);
             this.toolTip_2_29.SetToolTip(this.textBox_2_29, tooltip_2_29);
 
@@ -497,11 +463,8 @@ namespace APJPaletteSet
             this.label_2_30.Text = "Coordenada Y:";
             this.textBox_2_30.Name = "textBox_2_30";
             MyEvents.TextBoxEvents(textBox_2_30);
-            string tooltip_2_30 = "Determine a coordenada Y do ponto\n" +
-                                  "de origem (Y = 0) do terreno\n" +
-                                  "\n" +
-                                  "(número com decimais\n" +
-                                  "separados por . 'ponto')";
+            string tooltip_2_30 = MyTooltips.TextBox("a coordenada Y do ponto de origem (Y = 0) do terreno") + bk +
+                                  "(número, com decimais separados por . 'ponto')";
             this.toolTip_2_30.SetToolTip(this.label_2_30, tooltip_2_30);
             this.toolTip_2_30.SetToolTip(this.textBox_2_30, tooltip_2_30);
 
@@ -538,8 +501,7 @@ namespace APJPaletteSet
             this.textBox_2_10.LostFocus += delegate (object sender, EventArgs e) {
                 MyEvents.TextBox_LostFocus(sender, e, 2, 10);
             };
-            string tooltip_2_10 = "Determine o número do lote vizinho\n" +
-                                  "em relação ao limite selecionado";
+            string tooltip_2_10 = MyTooltips.TextBoxLimite("o número do lote vizinho");
             this.toolTip_2_10.SetToolTip(this.label_2_10, tooltip_2_10);
             this.toolTip_2_10.SetToolTip(this.textBox_2_10, tooltip_2_10);
 
@@ -550,8 +512,7 @@ namespace APJPaletteSet
             this.textBox_2_11.LostFocus += delegate (object sender, EventArgs e) {
                 MyEvents.TextBox_LostFocus(sender, e, 2, 11);
             };
-            string tooltip_2_11 = "Determine a tipo de fechamento\n" +
-                                  "em relação ao limite selecionado";
+            string tooltip_2_11 = MyTooltips.TextBoxLimite("o tipo de fechamento");
             this.toolTip_2_11.SetToolTip(this.label_2_11, tooltip_2_11);
             this.toolTip_2_11.SetToolTip(this.textBox_2_11, tooltip_2_11);
 
@@ -562,8 +523,7 @@ namespace APJPaletteSet
             this.textBox_2_12.LostFocus += delegate (object sender, EventArgs e) {
                 MyEvents.TextBox_LostFocus(sender, e, 2, 12);
             };
-            string tooltip_2_12 = "Determine a altura do fechamento\n" +
-                                  "em relação ao limite selecionado";
+            string tooltip_2_12 = MyTooltips.TextBoxLimite("a altura do fechamento");
             this.toolTip_2_12.SetToolTip(this.label_2_12, tooltip_2_12);
             this.toolTip_2_12.SetToolTip(this.textBox_2_12, tooltip_2_12);
 
@@ -574,8 +534,7 @@ namespace APJPaletteSet
             this.textBox_2_13.LostFocus += delegate (object sender, EventArgs e) {
                 MyEvents.TextBox_LostFocus(sender, e, 2, 13);
             };
-            string tooltip_2_13 = "Determine a via referente\n" +
-                                  "ao limite selecionado";
+            string tooltip_2_13 = MyTooltips.TextBoxLimite("a via");
             this.toolTip_2_13.SetToolTip(this.label_2_13, tooltip_2_13);
             this.toolTip_2_13.SetToolTip(this.textBox_2_13, tooltip_2_13);
             #endregion

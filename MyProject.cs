@@ -43,15 +43,15 @@ namespace APJPaletteSet
             {
                 //Recebe o controle e determina propriedade e par pelo seu nome;
                 string _textboxname = textbox.Name.ToString();
-            string [] _textsplit = _textboxname.Split('_');
-            int _prop = int.Parse(_textsplit[1]);
-            int _pair = int.Parse(_textsplit[2]);
+                string[] _textsplit = _textboxname.Split('_');
+                int _prop = int.Parse(_textsplit[1]);
+                int _pair = int.Parse(_textsplit[2]);
 
-            Project activeProj = GetProject();
-            ProjectStringProperty stringProp = (ProjectStringProperty)activeProj.Configuration.StringProperties[_prop];
-            StringPair strPair = (StringPair)stringProp.StringPairs[_pair];
+                Project activeProj = GetProject();
+                ProjectStringProperty stringProp = (ProjectStringProperty)activeProj.Configuration.StringProperties[_prop];
+                StringPair strPair = (StringPair)stringProp.StringPairs[_pair];
 
-            return strPair.Right;
+                return strPair.Right;
             }
             catch (ArgumentOutOfRangeException)
             {

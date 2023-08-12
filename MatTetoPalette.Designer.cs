@@ -199,7 +199,7 @@ namespace APJPaletteSet
             };
             string tooltip_61_0 = "Selecione a partir da lista o nome do material\n" +
                                   "de teto relacionado ao índice selecionado;\n" +
-                                  MyTooltips.Metodo();
+                                  MyTooltips.Tag();
             this.toolTip_61_0.SetToolTip(this.label_61_0, tooltip_61_0);
             this.toolTip_61_0.SetToolTip(this.comboBox_61_0, tooltip_61_0);
 
@@ -211,7 +211,7 @@ namespace APJPaletteSet
             };
             string tooltip_61_1 = "Selecione a partir da lista o nome abreviado\n" +
                                   "do material relacionado ao índice selecionado;\n" +
-                                  MyTooltips.Metodo();
+                                  MyTooltips.Tag();
             this.toolTip_61_1.SetToolTip(this.label_61_1, tooltip_61_1);
             this.toolTip_61_1.SetToolTip(this.comboBox_61_1, tooltip_61_1);
 
@@ -223,7 +223,7 @@ namespace APJPaletteSet
             };
             string tooltip_61_2 = "Selecione a partir da lista o nome do material\n" +
                                   "alternativo relacionado ao índice selecionado;\n" +
-                                  MyTooltips.Metodo();
+                                  MyTooltips.Tag();
             this.toolTip_61_2.SetToolTip(this.label_61_2, tooltip_61_2);
             this.toolTip_61_2.SetToolTip(this.comboBox_61_2, tooltip_61_2);
 
@@ -235,7 +235,7 @@ namespace APJPaletteSet
             };
             string tooltip_61_3 = "Selecione a partir da lista a altura\n" +
                                   "relacionada ao índice selecionado;\n" +
-                                  MyTooltips.Metodo();
+                                  MyTooltips.Tag();
             this.toolTip_61_3.SetToolTip(this.label_61_3, tooltip_61_3);
             this.toolTip_61_3.SetToolTip(this.comboBox_61_3, tooltip_61_3);
             

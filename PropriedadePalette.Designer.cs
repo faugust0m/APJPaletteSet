@@ -8,6 +8,8 @@ namespace APJPaletteSet
     partial class PropriedadePalette
     {
         private IContainer components = null;
+        string bk = "\n";
+        string bp = ";\n";
         #region Lista de Controles
         private Panel panel;
         private Label label;
@@ -188,11 +190,9 @@ namespace APJPaletteSet
             this.label_0_14.Text = "Tipo:";
             this.comboBox_0_14.Name = "textBox_0_14";
             MyEvents.ComboBoxEvents(comboBox_0_14);
-            string tooltip_0_14 = "Selecione o tipo de obra a partir da lista;\n" +
-                                  "Clique no link 'Editar lista' para modificá-la\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos)";
+            string tooltip_0_14 = MyTooltips.ComboBox("o tipo de obra") + bp +
+                                  MyTooltips.EdLista() +
+                                  MyTooltips.Selos();
             this.toolTip_0_14.SetToolTip(this.label_0_14, tooltip_0_14 );
             this.toolTip_0_14.SetToolTip(this.comboBox_0_14,tooltip_0_14 );
 
@@ -200,11 +200,8 @@ namespace APJPaletteSet
             this.label_0_15.Text = "Data:";
             this.textBox_0_15.Name = "textBox_0_15";
             MyEvents.TextBoxEvents(textBox_0_15);
-            string tooltip_0_15 = "Determine a data de início do projeto\n" +
-                                  "ex.: Jul/2022\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos)";
+            string tooltip_0_15 = MyTooltips.TextBox("a data de início do projeto, ex.: Jul/2022") + bk +
+                                  MyTooltips.Selos();
             this.toolTip_0_15.SetToolTip(this.label_0_15, tooltip_0_15);
             this.toolTip_0_15.SetToolTip(this.textBox_0_15, tooltip_0_15);
 
@@ -212,11 +209,8 @@ namespace APJPaletteSet
             this.label_0_16.Text = "Pranchas:";
             this.textBox_0_16.Name = "textBox_0_16";
             MyEvents.TextBoxEvents(textBox_0_16);
-            string tooltip_0_16 = "Determine a quantidade de pranchas\n" +
-                                  "do projeto legal\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos de aprovação)";
+            string tooltip_0_16 = MyTooltips.TextBox("a quantidade de pranchas do projeto legal") + bk +
+                                  MyTooltips.SelosAp();
             this.toolTip_0_16.SetToolTip(this.label_0_16, tooltip_0_16);
             this.toolTip_0_16.SetToolTip(this.textBox_0_16, tooltip_0_16);
 
@@ -224,7 +218,7 @@ namespace APJPaletteSet
             MyFormats.LinkLabelFormat(linkLabel);
             this.linkLabel.LinkClicked += delegate (object sender, LinkLabelLinkClickedEventArgs e) {
                 MyEvents.linkLabel_LinkClicked(sender, e, 0);
-            this.toolTip_link.SetToolTip(this.linkLabel, "Clique no link para editar a lista de tipos");
+            this.toolTip_link.SetToolTip(this.linkLabel, MyTooltips.Link("de tipos"));
             };
             #endregion
             #region groupBox_1
@@ -246,11 +240,8 @@ namespace APJPaletteSet
             this.label_0_1.Text = "Nome:";
             this.textBox_0_1.Name = "textBox_0_1";
             MyEvents.TextBoxEvents(textBox_0_1);
-            string tooltip_0_1 = "Determine o nome do proprietário\n" +
-                                 "principal do projeto\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos)";
+            string tooltip_0_1 = MyTooltips.TextBox("o nome do proprietário principal do projeto") + bk +
+                                  MyTooltips.Selos();
             this.toolTip_0_1.SetToolTip(this.label_0_1, tooltip_0_1);
             this.toolTip_0_1.SetToolTip(this.textBox_0_1, tooltip_0_1);
 
@@ -258,8 +249,7 @@ namespace APJPaletteSet
             this.label_0_2.Text = "Telefone:";
             this.textBox_0_2.Name = "textBox_0_2";
             MyEvents.TextBoxEvents(textBox_0_2);
-            string tooltip_0_2 = "Determine o telefone de contato\n" +
-                                 "do proprietário principal";
+            string tooltip_0_2 = MyTooltips.TextBox("o telefone de contato do proprietário principal");
             this.toolTip_0_2.SetToolTip(this.label_0_2, tooltip_0_2);
             this.toolTip_0_2.SetToolTip(this.textBox_0_2, tooltip_0_2);
 
@@ -267,8 +257,7 @@ namespace APJPaletteSet
             this.label_0_3.Text = "e-mail:";
             this.textBox_0_3.Name = "textBox_0_3";
             MyEvents.TextBoxEvents(textBox_0_3);
-            string tooltip_0_3 = "Determine o e-mail de contato\n" +
-                                 "do proprietário principal";
+            string tooltip_0_3 = MyTooltips.TextBox("o e-mail de contato do proprietário principal");
             this.toolTip_0_3.SetToolTip(this.label_0_3, tooltip_0_3);
             this.toolTip_0_3.SetToolTip(this.textBox_0_3, tooltip_0_3);
 
@@ -276,8 +265,7 @@ namespace APJPaletteSet
             this.label_0_4.Text = "CPF/CNPJ:";
             this.textBox_0_4.Name = "textBox_0_4";
             MyEvents.TextBoxEvents(textBox_0_4);
-            string tooltip_0_4 = "Determine o CPF ou CNPJ do\n" +
-                                 "proprietário principal";
+            string tooltip_0_4 = MyTooltips.TextBox("o CPF ou CNPJ do proprietário principal");
             this.toolTip_0_4.SetToolTip(this.label_0_4, tooltip_0_4);
             this.toolTip_0_4.SetToolTip(this.textBox_0_4, tooltip_0_4);
 
@@ -285,8 +273,7 @@ namespace APJPaletteSet
             this.label_0_5.Text = "Endereço:";
             this.textBox_0_5.Name = "textBox_0_5";
             MyEvents.TextBoxEvents(textBox_0_5);
-            string tooltip_0_5 = "Determine o endereço de correspondência\n" +
-                                 "do proprietário principal";
+            string tooltip_0_5 = MyTooltips.TextBox("o endereço de correspondência do proprietário principal");
             this.toolTip_0_5.SetToolTip(this.label_0_5, tooltip_0_5);
             this.toolTip_0_5.SetToolTip(this.textBox_0_5, tooltip_0_5);
 
@@ -310,8 +297,7 @@ namespace APJPaletteSet
             this.label_0_8.Text = "Nome:";
             this.textBox_0_8.Name = "textBox_0_8";
             MyEvents.TextBoxEvents(textBox_0_8);
-            string tooltip_0_8 = "Determine o nome do coproprietário\n" +
-                                 "do projeto";
+            string tooltip_0_8 = MyTooltips.TextBox("o nome do coproprietário do projeto");
             this.toolTip_0_8.SetToolTip(this.label_0_8, tooltip_0_8);
             this.toolTip_0_8.SetToolTip(this.textBox_0_8, tooltip_0_8);
 
@@ -319,8 +305,7 @@ namespace APJPaletteSet
             this.label_0_9.Text = "Telefone:";
             this.textBox_0_9.Name = "textBox_0_9";
             MyEvents.TextBoxEvents(textBox_0_9);
-            string tooltip_0_9 = "Determine o telefone de contato\n" +
-                                 "do coproprietário";
+            string tooltip_0_9 = MyTooltips.TextBox("o telefone de contato do coproprietário");
             this.toolTip_0_9.SetToolTip(this.label_0_9, tooltip_0_9);
             this.toolTip_0_9.SetToolTip(this.textBox_0_9, tooltip_0_9);
 
@@ -328,8 +313,7 @@ namespace APJPaletteSet
             this.label_0_10.Text = "e-mail:";
             this.textBox_0_10.Name = "textBox_0_10";
             MyEvents.TextBoxEvents(textBox_0_10);
-            string tooltip_0_10 = "Determine o e-mail de contato\n" +
-                                  "do coproprietário";
+            string tooltip_0_10 = MyTooltips.TextBox("o e-mail de contato do coproprietário");
             this.toolTip_0_10.SetToolTip(this.label_0_10, tooltip_0_10);
             this.toolTip_0_10.SetToolTip(this.textBox_0_10, tooltip_0_10);
 
@@ -337,8 +321,7 @@ namespace APJPaletteSet
             this.label_0_11.Text = "CPF/CNPJ:";
             this.textBox_0_11.Name = "textBox_0_11";
             MyEvents.TextBoxEvents(textBox_0_11);
-            string tooltip_0_11 = "Determine o CPF ou CNPJ do\n" +
-                                  "coproprietário";
+            string tooltip_0_11 = MyTooltips.TextBox("o CPF ou CNPJ do coproprietário");
             this.toolTip_0_11.SetToolTip(this.label_0_11, tooltip_0_11);
             this.toolTip_0_11.SetToolTip(this.textBox_0_11, tooltip_0_11);
 
@@ -346,8 +329,7 @@ namespace APJPaletteSet
             this.label_0_12.Text = "Endereço:";
             this.textBox_0_12.Name = "textBox_0_12";
             MyEvents.TextBoxEvents(textBox_0_12);
-            string tooltip_0_12 = "Determine o endereço de correspondência\n" +
-                                  "do coproprietário";
+            string tooltip_0_12 = MyTooltips.TextBox("o endereço de correspondência do coproprietário");
             this.toolTip_0_12.SetToolTip(this.label_0_12, tooltip_0_12);
             this.toolTip_0_12.SetToolTip(this.textBox_0_12, tooltip_0_12);
             #endregion
@@ -370,11 +352,8 @@ namespace APJPaletteSet
             this.label_1_0.Text = "Arquiteto:";
             this.textBox_1_0.Name = "textBox_1_0";
             MyEvents.TextBoxEvents(textBox_1_0);
-            string tooltip_1_0 = "Determine o nome do profissional\n" +
-                                 "responsável pelo projeto\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos)";
+            string tooltip_1_0 = MyTooltips.TextBox("o nome do profissional responsável pelo projeto") + bk +
+                                 MyTooltips.Selos();
             this.toolTip_1_0.SetToolTip(this.label_1_0, tooltip_1_0);
             this.toolTip_1_0.SetToolTip(this.textBox_1_0, tooltip_1_0);
 
@@ -382,11 +361,8 @@ namespace APJPaletteSet
             this.label_1_1.Text = "CAU:";
             this.textBox_1_1.Name = "textBox_1_1";
             MyEvents.TextBoxEvents(textBox_1_1);
-            string tooltip_1_1 = "Determine o número de registro do\n" +
-                                 "profissional responsável pelo projeto\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos)";
+            string tooltip_1_1 = MyTooltips.TextBox("o número de registro do profissional responsável pelo projeto") + bk +
+                                 MyTooltips.Selos();
             this.toolTip_1_1.SetToolTip(this.label_1_1, tooltip_1_1);
             this.toolTip_1_1.SetToolTip(this.textBox_1_1, tooltip_1_1);
 
@@ -394,11 +370,8 @@ namespace APJPaletteSet
             this.label_1_2.Text = "Coorden.:";
             this.textBox_1_2.Name = "textBox_1_2";
             MyEvents.TextBoxEvents(textBox_1_2);
-            string tooltip_1_2 = "Determine o nome do coordenador\n" +
-                                 "responsável pelo projeto\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos)";
+            string tooltip_1_2 = MyTooltips.TextBox("o nome do coordenador responsável pelo projeto") + bk +
+                                 MyTooltips.Selos();
             this.toolTip_1_2.SetToolTip(this.label_1_2, tooltip_1_2);
             this.toolTip_1_2.SetToolTip(this.textBox_1_2, tooltip_1_2);
 
@@ -406,11 +379,8 @@ namespace APJPaletteSet
             this.label_1_3.Text = "R. Técnico:";
             this.textBox_1_3.Name = "textBox_1_3";
             MyEvents.TextBoxEvents(textBox_1_3);
-            string tooltip_1_3 = "Determine o nome do profissional\n" +
-                                 "responsável pela execução do projeto\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos de aprovação)";
+            string tooltip_1_3 = MyTooltips.TextBox("o nome do profissional responsável pela execução do projeto") + bk +
+                                 MyTooltips.SelosAp();
             this.toolTip_1_3.SetToolTip(this.label_1_3, tooltip_1_3);
             this.toolTip_1_3.SetToolTip(this.textBox_1_3, tooltip_1_3);
 
@@ -418,11 +388,8 @@ namespace APJPaletteSet
             this.label_1_4.Text = "CAU/CREA:";
             this.textBox_1_4.Name = "textBox_1_4";
             MyEvents.TextBoxEvents(textBox_1_4);
-            string tooltip_1_4 = "Determine o número de registro do profissional\n" +
-                                 "responsável pela execução do projeto\n" +
-                                  "\n" +
-                                  "(Informação utilizada no preenchimento\n" +
-                                  "automático dos selos de aprovação)";
+            string tooltip_1_4 = MyTooltips.TextBox("o número de registro do profissional responsável pela execução do projeto") + bk +
+                                 MyTooltips.SelosAp();
             this.toolTip_1_4.SetToolTip(this.label_1_4, tooltip_1_4);
             this.toolTip_1_4.SetToolTip(this.textBox_1_4, tooltip_1_4);
             #endregion
