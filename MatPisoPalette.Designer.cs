@@ -2,11 +2,14 @@
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace APJPaletteSet
 {
     partial class MatPisoPalette
     {
+        private IContainer components = null;
+        string bk = "\n";
         #region Lista de Controles
         private Panel panel;
         private Label label;
@@ -18,23 +21,33 @@ namespace APJPaletteSet
         private GroupBox groupBox_0;
         private Label label_5_0;
         private ComboBox comboBox_5_0;
+        private ToolTip toolTip_5_0;
         private Label label_5_1;
         private ComboBox comboBox_5_1;
+        private ToolTip toolTip_5_1;
         private Label label_5_2;
         private ComboBox comboBox_5_2;
+        private ToolTip toolTip_5_2;
         private Label label_5_3;
         private ComboBox comboBox_5_3;
+        private ToolTip toolTip_5_3;
         private Label label_5_4;
         private ComboBox comboBox_5_4;
+        private ToolTip toolTip_5_4;
         private Label label_5_5;
         private ComboBox comboBox_5_5;
+        private ToolTip toolTip_5_5;
         private Label label_5_6;
         private ComboBox comboBox_5_6;
+        private ToolTip toolTip_5_6;
         private Label label_5_7;
         private TextBox textBox_5_7;
+        private ToolTip toolTip_5_7;
         private Label label_5_8;
         private TextBox textBox_5_8;
+        private ToolTip toolTip_5_8;
         private LinkLabel linkLabel;
+        private ToolTip toolTip_link;
         private RadioButton radioButton_5_1;
         private RadioButton radioButton_5_2;
         private RadioButton radioButton_5_3;
@@ -47,6 +60,7 @@ namespace APJPaletteSet
         private RadioButton radioButton_5_10;
         private RadioButton radioButton_5_11;
         private RadioButton radioButton_5_12;
+        private ToolTip toolTip_radio;
 
         private GroupBox groupBox_1;
         private Label label_19_0;
@@ -95,26 +109,38 @@ namespace APJPaletteSet
             this.space_0 = new Label();
             this.space_1 = new Label();
 
+            this.components = new Container();
+
             this.groupBox_0 = new GroupBox();
             this.label_5_0 = new Label();
             this.comboBox_5_0 = new ComboBox();
+            this.toolTip_5_0 = new ToolTip(this.components);
             this.label_5_1 = new Label();
             this.comboBox_5_1 = new ComboBox();
+            this.toolTip_5_1 = new ToolTip(this.components);
             this.label_5_2 = new Label();
             this.comboBox_5_2 = new ComboBox();
+            this.toolTip_5_2 = new ToolTip(this.components);
             this.label_5_3 = new Label();
             this.comboBox_5_3 = new ComboBox();
+            this.toolTip_5_3 = new ToolTip(this.components);
             this.label_5_4 = new Label();
             this.comboBox_5_4 = new ComboBox();
+            this.toolTip_5_4 = new ToolTip(this.components);
             this.label_5_5 = new Label();
             this.comboBox_5_5 = new ComboBox();
+            this.toolTip_5_5 = new ToolTip(this.components);
             this.label_5_6 = new Label();
             this.comboBox_5_6 = new ComboBox();
+            this.toolTip_5_6 = new ToolTip(this.components);
             this.label_5_7 = new Label();
             this.textBox_5_7 = new TextBox();
+            this.toolTip_5_7 = new ToolTip(this.components);
             this.label_5_8 = new Label();
             this.textBox_5_8 = new TextBox();
+            this.toolTip_5_8 = new ToolTip(this.components);
             this.linkLabel = new LinkLabel();
+            this.toolTip_link = new ToolTip(this.components);
             this.radioButton_5_1 = new RadioButton();
             this.radioButton_5_2 = new RadioButton();
             this.radioButton_5_3 = new RadioButton();
@@ -127,6 +153,7 @@ namespace APJPaletteSet
             this.radioButton_5_10 = new RadioButton();
             this.radioButton_5_11 = new RadioButton();
             this.radioButton_5_12 = new RadioButton();
+            this.toolTip_radio = new ToolTip(this.components);
 
             this.groupBox_1 = new GroupBox();
             this.label_19_0 = new Label();
@@ -218,50 +245,51 @@ namespace APJPaletteSet
             this.radioButton_5_1.Name = "radioButton_5_1";
             this.radioButton_5_1.Text = "01";
             this.radioButton_5_1.Location = new Point(10, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_1, MyTooltips.Radio());
             this.radioButton_5_2.Name = "radioButton_5_2";
             this.radioButton_5_2.Text = "02";
             this.radioButton_5_2.Location = new Point(50, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_2, MyTooltips.Radio());
             this.radioButton_5_3.Name = "radioButton_5_3";
             this.radioButton_5_3.Text = "03";
             this.radioButton_5_3.Location = new Point(90, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_3, MyTooltips.Radio());
             this.radioButton_5_4.Name = "radioButton_5_4";
             this.radioButton_5_4.Text = "04";
             this.radioButton_5_4.Location = new Point(130, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_4, MyTooltips.Radio());
             this.radioButton_5_5.Name = "radioButton_5_5";
             this.radioButton_5_5.Text = "05";
             this.radioButton_5_5.Location = new Point(170, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_5, MyTooltips.Radio());
             this.radioButton_5_6.Name = "radioButton_5_6";
             this.radioButton_5_6.Text = "06";
             this.radioButton_5_6.Location = new Point(210, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_6, MyTooltips.Radio());
             this.radioButton_5_7.Name = "radioButton_5_7";
             this.radioButton_5_7.Text = "07";
             this.radioButton_5_7.Location = new Point(10, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_7, MyTooltips.Radio());
             this.radioButton_5_8.Name = "radioButton_5_8";
             this.radioButton_5_8.Text = "08";
             this.radioButton_5_8.Location = new Point(50, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_8, MyTooltips.Radio());
             this.radioButton_5_9.Name = "radioButton_5_9";
             this.radioButton_5_9.Text = "09";
             this.radioButton_5_9.Location = new Point(90, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_9, MyTooltips.Radio());
             this.radioButton_5_10.Name = "radioButton_5_10";
             this.radioButton_5_10.Text = "10";
             this.radioButton_5_10.Location = new Point(130, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_10, MyTooltips.Radio());
             this.radioButton_5_11.Name = "radioButton_5_11";
             this.radioButton_5_11.Text = "11";
             this.radioButton_5_11.Location = new Point(170, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_5_11, MyTooltips.Radio());
             this.radioButton_5_12.Name = "radioButton_5_12";
             this.radioButton_5_12.Text = "12";
             this.radioButton_5_12.Location = new Point(210, 40);
+            this.toolTip_radio.SetToolTip(this.radioButton_5_12, MyTooltips.Radio());
             //
             // textBoxes
             //
@@ -271,6 +299,11 @@ namespace APJPaletteSet
             this.comboBox_5_0.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 0);
             };
+            string tooltip_5_0 = MyTooltips.ComboBoxList("o nome do material de piso") + bk +
+                                 MyTooltips.Tag();
+            this.toolTip_5_0.SetToolTip(this.label_5_0, tooltip_5_0);
+            this.toolTip_5_0.SetToolTip(this.comboBox_5_0, tooltip_5_0);
+
             this.label_5_1.Name = "label_5_1";
             this.label_5_1.Text = "- Abreviado:";
             this.comboBox_5_1.Name = "comboBox_5_1";
@@ -323,7 +356,7 @@ namespace APJPaletteSet
             this.linkLabel.LinkClicked += delegate (object sender, LinkLabelLinkClickedEventArgs e) {
                 MyEvents.linkLabel_LinkClicked(sender, e, 1);
             };
-
+            this.toolTip_link.SetToolTip(this.linkLabel, MyTooltips.Link("de materiais relacionados ao piso"));
             #endregion
             #region  groupBox_1
             this.groupBox_1.Controls.Add(this.label_19_0);

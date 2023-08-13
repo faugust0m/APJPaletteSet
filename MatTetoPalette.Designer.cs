@@ -9,6 +9,7 @@ namespace APJPaletteSet
     partial class MatTetoPalette
     {
         private IContainer components = null;
+        string bk = "\n";
         #region Lista de Controles
         private Panel panel;
         private Label label;
@@ -144,50 +145,51 @@ namespace APJPaletteSet
             this.radioButton_61_1.Name = "radioButton_61_1";
             this.radioButton_61_1.Text = "01";
             this.radioButton_61_1.Location = new Point(10, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_1, MyTooltips.Radio());
             this.radioButton_61_2.Name = "radioButton_61_2";
             this.radioButton_61_2.Text = "02";
             this.radioButton_61_2.Location = new Point(50, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_2, MyTooltips.Radio());
             this.radioButton_61_3.Name = "radioButton_61_3";
             this.radioButton_61_3.Text = "03";
             this.radioButton_61_3.Location = new Point(90, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_3, MyTooltips.Radio());
             this.radioButton_61_4.Name = "radioButton_61_4";
             this.radioButton_61_4.Text = "04";
             this.radioButton_61_4.Location = new Point(130, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_4, MyTooltips.Radio());
             this.radioButton_61_5.Name = "radioButton_61_5";
             this.radioButton_61_5.Text = "05";
             this.radioButton_61_5.Location = new Point(170, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_5, MyTooltips.Radio());
             this.radioButton_61_6.Name = "radioButton_61_6";
             this.radioButton_61_6.Text = "06";
             this.radioButton_61_6.Location = new Point(210, 20);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_6, MyTooltips.Radio());
             this.radioButton_61_7.Name = "radioButton_61_7";
             this.radioButton_61_7.Text = "07";
             this.radioButton_61_7.Location = new Point(10, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_7, MyTooltips.Radio());
             this.radioButton_61_8.Name = "radioButton_61_8";
             this.radioButton_61_8.Text = "08";
             this.radioButton_61_8.Location = new Point(50, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_8, MyTooltips.Radio());
             this.radioButton_61_9.Name = "radioButton_61_9";
             this.radioButton_61_9.Text = "09";
             this.radioButton_61_9.Location = new Point(90, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_9, MyTooltips.Radio());
             this.radioButton_61_10.Name = "radioButton_61_10";
             this.radioButton_61_10.Text = "10";
             this.radioButton_61_10.Location = new Point(130, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_10, MyTooltips.Radio());
             this.radioButton_61_11.Name = "radioButton_61_11";
             this.radioButton_61_11.Text = "11";
             this.radioButton_61_11.Location = new Point(170, 40);
-
+            this.toolTip_radio.SetToolTip(this.radioButton_61_11, MyTooltips.Radio());
             this.radioButton_61_12.Name = "radioButton_61_12";
             this.radioButton_61_12.Text = "12";
             this.radioButton_61_12.Location = new Point(210, 40);
+            this.toolTip_radio.SetToolTip(this.radioButton_61_12, MyTooltips.Radio());
             //
             // textBoxes
             //
@@ -197,8 +199,7 @@ namespace APJPaletteSet
             this.comboBox_61_0.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 0);
             };
-            string tooltip_61_0 = "Selecione a partir da lista o nome do material\n" +
-                                  "de teto relacionado ao índice selecionado;\n" +
+            string tooltip_61_0 = MyTooltips.ComboBoxList("o nome do material de teto") + bk +
                                   MyTooltips.Tag();
             this.toolTip_61_0.SetToolTip(this.label_61_0, tooltip_61_0);
             this.toolTip_61_0.SetToolTip(this.comboBox_61_0, tooltip_61_0);
@@ -209,8 +210,7 @@ namespace APJPaletteSet
             this.comboBox_61_1.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 1);
             };
-            string tooltip_61_1 = "Selecione a partir da lista o nome abreviado\n" +
-                                  "do material relacionado ao índice selecionado;\n" +
+            string tooltip_61_1 = MyTooltips.ComboBoxList("o nome abreviado do material") + bk +
                                   MyTooltips.Tag();
             this.toolTip_61_1.SetToolTip(this.label_61_1, tooltip_61_1);
             this.toolTip_61_1.SetToolTip(this.comboBox_61_1, tooltip_61_1);
@@ -221,8 +221,7 @@ namespace APJPaletteSet
             this.comboBox_61_2.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 2);
             };
-            string tooltip_61_2 = "Selecione a partir da lista o nome do material\n" +
-                                  "alternativo relacionado ao índice selecionado;\n" +
+            string tooltip_61_2 = MyTooltips.ComboBoxList("o nome do material alternativo" ) + bk +
                                   MyTooltips.Tag();
             this.toolTip_61_2.SetToolTip(this.label_61_2, tooltip_61_2);
             this.toolTip_61_2.SetToolTip(this.comboBox_61_2, tooltip_61_2);
@@ -233,8 +232,7 @@ namespace APJPaletteSet
             this.comboBox_61_3.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 3);
             };
-            string tooltip_61_3 = "Selecione a partir da lista a altura\n" +
-                                  "relacionada ao índice selecionado;\n" +
+            string tooltip_61_3 = MyTooltips.ComboBoxLista("a altura") + bk +
                                   MyTooltips.Tag();
             this.toolTip_61_3.SetToolTip(this.label_61_3, tooltip_61_3);
             this.toolTip_61_3.SetToolTip(this.comboBox_61_3, tooltip_61_3);
@@ -245,23 +243,39 @@ namespace APJPaletteSet
             this.comboBox_61_4.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 4);
             };
+            string tooltip_61_4 = MyTooltips.ComboBoxLista("a dimensão") + bk +
+                                  MyTooltips.Tag();
+            this.toolTip_61_4.SetToolTip(this.label_61_4, tooltip_61_4);
+            this.toolTip_61_4.SetToolTip(this.comboBox_61_4, tooltip_61_4);
+
             this.label_61_5.Name = "label_61_5";
             this.label_61_5.Text = "Acabamento:";
             this.comboBox_61_5.Name = "comboBox_61_5";
             this.comboBox_61_5.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 5);
             };
+            string tooltip_61_5 = MyTooltips.ComboBoxList("o acabamento do material") + bk +
+                                  MyTooltips.Tag();
+            this.toolTip_61_5.SetToolTip(this.label_61_5, tooltip_61_5);
+            this.toolTip_61_5.SetToolTip(this.comboBox_61_5, tooltip_61_5);
+
             this.label_61_6.Name = "label_61_6";
             this.label_61_6.Text = "Fabricante:";
             this.comboBox_61_6.Name = "comboBox_61_6";
             this.comboBox_61_6.LostFocus += delegate (object sender, EventArgs e) {
                 ComboBox_0_LostFocus(sender, e, 6);
             };
+            string tooltip_61_6 = MyTooltips.ComboBoxList("o fabricante do material") + bk +
+                                  MyTooltips.Tag();
+            this.toolTip_61_6.SetToolTip(this.label_61_6, tooltip_61_6);
+            this.toolTip_61_6.SetToolTip(this.comboBox_61_6, tooltip_61_6);
+
             this.linkLabel.Name = "linkLabel";
             MyFormats.LinkLabelFormat(linkLabel);
             this.linkLabel.LinkClicked += delegate (object sender, LinkLabelLinkClickedEventArgs e) {
                 MyEvents.linkLabel_LinkClicked(sender, e, 3);
             };
+            this.toolTip_link.SetToolTip(this.linkLabel, MyTooltips.Link("de materiais relacionados ao teto"));
             #endregion
 
             int _padd = panel.HorizontalScroll.Enabled ? 10 : 0;

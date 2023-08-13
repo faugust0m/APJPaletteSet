@@ -10,7 +10,6 @@ namespace APJPaletteSet
     {
         private IContainer components = null;
         string bk = "\n";
-        string bp = ";\n";
         #region Lista de Controles
         private Panel panel;
         private Label label;
