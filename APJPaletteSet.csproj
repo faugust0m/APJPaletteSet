@@ -114,12 +114,6 @@
     <Compile Include="ListasEsquadriasPalette .Designer.cs">
       <DependentUpon>ListasEsquadriasPalette .cs</DependentUpon>
     </Compile>
-    <Compile Include="ListasLegendaPalette .cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ListasLegendaPalette .Designer.cs">
-      <DependentUpon>ListasLegendaPalette .cs</DependentUpon>
-    </Compile>
     <Compile Include="ListasTetoPalette.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,12 +137,6 @@
     </Compile>
     <Compile Include="MatEsquadriasPalette.Designer.cs">
       <DependentUpon>MatEsquadriasPalette.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MatLegendaPalette.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MatLegendaPalette.Designer.cs">
-      <DependentUpon>MatLegendaPalette.cs</DependentUpon>
     </Compile>
     <Compile Include="FornecedoresPalette.cs">
       <SubType>UserControl</SubType>
@@ -212,9 +200,6 @@
     <EmbeddedResource Include="ListasEsquadriasPalette .resx">
       <DependentUpon>ListasEsquadriasPalette .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListasLegendaPalette .resx">
-      <DependentUpon>ListasLegendaPalette .cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ListasTetoPalette.resx">
       <DependentUpon>ListasTetoPalette.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,9 +211,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MatEsquadriasPalette.resx">
       <DependentUpon>MatEsquadriasPalette.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MatLegendaPalette.resx">
-      <DependentUpon>MatLegendaPalette.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FornecedoresPalette.resx">
       <DependentUpon>FornecedoresPalette.cs</DependentUpon>
