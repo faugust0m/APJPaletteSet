@@ -266,7 +266,6 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(5, "comboBox_82_0"); //Atualiza lista esquadrias
                     MyCommands.ReloadComp(6, "comboBox_82_0"); //Atualiza lista legenda
                     MyCommands.ReloadComp(6, "comboBox_82_0"); //Atualiza combobox esquadrias
-                    //MyCommands.ReloadComp(7, "comboBox_86_72"); //Atualiza combobox legenda
                     break;
                 case "Maçanetas":
                     MyCommands.ReloadComp(5, "comboBox_83_0"); //Atualiza lista esquadrias
