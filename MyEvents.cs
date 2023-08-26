@@ -40,16 +40,17 @@ namespace APJPaletteSet
                 TextBox_KeyPress(sender, e, combobox, _prop, _pair);
             };
         }
-        internal static void CheckBoxEvents(CheckBox checkbox, ComboBox combobox, int _propObj, int _pairLgn, string _default)
-        {
-            //Recebe o controle e determina propriedade e par pelo seu nome;
-            checkbox.Paint += delegate (object sender, PaintEventArgs e) {
-                CheckBox_Paint(sender, e, combobox, _propObj, _pairLgn, _default);
-            };
-            checkbox.CheckedChanged += delegate (object sender, EventArgs e) {
-                CheckBox_CheckedChanged(sender, e, combobox, _propObj, _pairLgn, _default);
-            };
-        }
+
+        //internal static void CheckBoxEvents(CheckBox checkbox, ComboBox combobox, int _propObj, int _pairLgn, string _default)
+        //{
+        //    //Recebe o controle e determina propriedade e par pelo seu nome;
+        //    checkbox.Paint += delegate (object sender, PaintEventArgs e) {
+        //        CheckBox_Paint(sender, e, combobox, _propObj, _pairLgn, _default);
+        //    };
+        //    checkbox.CheckedChanged += delegate (object sender, EventArgs e) {
+        //        CheckBox_CheckedChanged(sender, e, combobox, _propObj, _pairLgn, _default);
+        //    };
+        //}
         internal static void ComboBoxEvents(ComboBox combobox)
         {
             //Recebe o controle e determina propriedade e par pelo seu nome;
@@ -130,30 +131,30 @@ namespace APJPaletteSet
             }
         }
 
-        internal static void CheckBox_CheckedChanged(object sender, EventArgs e, ComboBox combobox, int _propObj, int _pairLgn, string _default)
-        {
-            if ((sender as CheckBox).Checked)
-            {
-                combobox.Enabled = false;
-                combobox.Text = MyProject.GetDetailValue(_propObj, 0);
-                MyProject.SetDetailValue(86, _pairLgn, _default);
-            }
+        //internal static void CheckBox_CheckedChanged(object sender, EventArgs e, ComboBox combobox, int _propObj, int _pairLgn, string _default)
+        //{
+        //    if ((sender as CheckBox).Checked)
+        //    {
+        //        combobox.Enabled = false;
+        //        combobox.Text = MyProject.GetDetailValue(_propObj, 0);
+        //        MyProject.SetDetailValue(86, _pairLgn, _default);
+        //    }
 
-            if ((sender as CheckBox).Checked == false)
-            {
-                combobox.Enabled = true;
-                string _value = combobox.Text;
-                MyProject.SetDetailValue(86, _pairLgn, _value);
-            }
-        }
-        internal static void CheckBox_Paint(object sender, PaintEventArgs e, ComboBox combobox, int _propObj, int _pairLgn, string _default)
-        {
-            if (MyProject.GetDetailValue(86, _pairLgn) == _default)
-            {
-                (sender as CheckBox).Checked = true;
-                combobox.Text = MyProject.GetDetailValue(_propObj, 0);
-            }
-        }
+        //    if ((sender as CheckBox).Checked == false)
+        //    {
+        //        combobox.Enabled = true;
+        //        string _value = combobox.Text;
+        //        MyProject.SetDetailValue(86, _pairLgn, _value);
+        //    }
+        //}
+        //internal static void CheckBox_Paint(object sender, PaintEventArgs e, ComboBox combobox, int _propObj, int _pairLgn, string _default)
+        //{
+        //    if (MyProject.GetDetailValue(86, _pairLgn) == _default)
+        //    {
+        //        (sender as CheckBox).Checked = true;
+        //        combobox.Text = MyProject.GetDetailValue(_propObj, 0);
+        //    }
+        //}
 
         public static void ComboBox_GotFocus(object sender, EventArgs e)
         {
@@ -232,7 +233,7 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(2, "comboBox_5_0"); //Atualiza lista piso
                     MyCommands.ReloadComp(6, "comboBox_5_0"); //Atualiza lista legenda
                     MyCommands.ReloadComp(3, "comboBox_5_0"); //Atualiza combobox piso
-                    MyCommands.ReloadComp(7, "comboBox_86_43"); //Atualiza combobox legenda
+                    //MyCommands.ReloadComp(7, "comboBox_86_43"); //Atualiza combobox legenda
                     break;
                 case "PisoAbreviado":
                     MyCommands.ReloadComp(2, "comboBox_5_1"); //Atualiza lista piso
@@ -253,7 +254,7 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(3, "comboBox_47_0"); //Atualiza lista parede
                     MyCommands.ReloadComp(6, "comboBox_47_0"); //Atualiza lista legenda
                     MyCommands.ReloadComp(4, "comboBox_47_0"); //Atualiza combobox parede
-                    MyCommands.ReloadComp(7, "comboBox_86_1"); //Atualiza combobox legenda
+                    //MyCommands.ReloadComp(7, "comboBox_86_1"); //Atualiza combobox legenda
                     break;
                 case "ParedeAbreviado":
                     MyCommands.ReloadComp(3, "comboBox_47_1"); //Atualiza lista parede
@@ -270,15 +271,15 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(4, "comboBox_61_0"); //Atualiza lista teto
                     MyCommands.ReloadComp(6, "comboBox_61_0"); //Atualiza lista legenda
                     MyCommands.ReloadComp(5, "comboBox_61_0"); //Atualiza combobox teto
-                    MyCommands.ReloadComp(5, "comboBox_86_20"); //Atualiza combobox legenda
+                    //MyCommands.ReloadComp(5, "comboBox_86_20"); //Atualiza combobox legenda
                     break;
                 case "TetoAbreviado":
                     MyCommands.ReloadComp(4, "comboBox_61_1"); //Atualiza lista teto
-                    MyCommands.ReloadComp(5, "comboBox_61_1"); //Atualiza combobox legenda
+                    //MyCommands.ReloadComp(5, "comboBox_61_1"); //Atualiza combobox legenda
                     break;
                 case "FabricanteTeto":
                     MyCommands.ReloadComp(4, "comboBox_61_6"); //Atualiza lista teto
-                    MyCommands.ReloadComp(5, "comboBox_61_6"); //Atualiza combobox legenda
+                    //MyCommands.ReloadComp(5, "comboBox_61_6"); //Atualiza combobox legenda
                     break;
 
 
@@ -306,7 +307,7 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(5, "comboBox_82_0"); //Atualiza lista esquadrias
                     MyCommands.ReloadComp(6, "comboBox_82_0"); //Atualiza lista legenda
                     MyCommands.ReloadComp(6, "comboBox_82_0"); //Atualiza combobox esquadrias
-                    MyCommands.ReloadComp(7, "comboBox_86_72"); //Atualiza combobox legenda
+                    //MyCommands.ReloadComp(7, "comboBox_86_72"); //Atualiza combobox legenda
                     break;
                 case "Maçanetas":
                     MyCommands.ReloadComp(5, "comboBox_83_0"); //Atualiza lista esquadrias
@@ -319,18 +320,18 @@ namespace APJPaletteSet
 
 
 
-                case "Espelho":
-                    MyCommands.ReloadComp(6, "comboBox_86_15"); //Atualiza lista legenda
-                    MyCommands.ReloadComp(7, "comboBox_86_15"); //Atualiza combobox legenda
-                    break;
-                case "Marcenaria":
-                    MyCommands.ReloadComp(6, "comboBox_86_34"); //Atualiza lista legenda
-                    MyCommands.ReloadComp(7, "comboBox_86_34"); //Atualiza combobox legenda
-                    break;
-                case "Revestimento":
-                    MyCommands.ReloadComp(6, "comboBox_86_57"); //Atualiza lista legenda
-                    MyCommands.ReloadComp(7, "comboBox_86_57"); //Atualiza combobox legenda
-                    break;
+                //case "Espelho":
+                //    MyCommands.ReloadComp(6, "comboBox_86_15"); //Atualiza lista legenda
+                //    MyCommands.ReloadComp(7, "comboBox_86_15"); //Atualiza combobox legenda
+                //    break;
+                //case "Marcenaria":
+                //    MyCommands.ReloadComp(6, "comboBox_86_34"); //Atualiza lista legenda
+                //    MyCommands.ReloadComp(7, "comboBox_86_34"); //Atualiza combobox legenda
+                //    break;
+                //case "Revestimento":
+                //    MyCommands.ReloadComp(6, "comboBox_86_57"); //Atualiza lista legenda
+                //    MyCommands.ReloadComp(7, "comboBox_86_57"); //Atualiza combobox legenda
+                //    break;
 
 
 

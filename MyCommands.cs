@@ -82,7 +82,7 @@ namespace APJPaletteSet
             _myPs._fourth.FillComponent();
             _myPs._fifth.FillComponent();
             _myPs._sixth.FillComponent();
-            _myPs._seventh.FillComponent();
+            //_myPs._seventh.FillComponent();
             _myPs._eighth.FillComponent();
             _myPs._ninth.FillComponent();
         }
@@ -94,7 +94,7 @@ namespace APJPaletteSet
             _myPs._fourth.FillComponent();
             _myPs._fifth.FillComponent();
             _myPs._sixth.FillComponent();
-            _myPs._seventh.FillComponent();
+            //_myPs._seventh.FillComponent();
             _myPs._eighth.FillComponent();
             _myPs._ninth.FillComponent();
         }
@@ -132,11 +132,11 @@ namespace APJPaletteSet
                     break;
                 case 6:
                     _myPs._sixth.FillList(combobox);
-                    _myPl._sixth.FillList(combobox);
+                    //_myPl._sixth.FillList(combobox);
                     break;
-                case 7:
-                    _myPs._seventh.FillList(combobox);
-                    break;                    
+                //case 7:
+                //    _myPs._seventh.FillList(combobox);
+                //    break;                    
             }
         }
         public static void ReloadCompIndex(ComboBox _control, int _index, string _text, int _palette)

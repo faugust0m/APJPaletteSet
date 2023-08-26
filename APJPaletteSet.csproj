@@ -114,9 +114,7 @@
     <Compile Include="ListasEsquadriasPalette .Designer.cs">
       <DependentUpon>ListasEsquadriasPalette .cs</DependentUpon>
     </Compile>
-    <Compile Include="ListasLegendaPalette .cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ListasLegendaPalette .cs" />
     <Compile Include="ListasLegendaPalette .Designer.cs">
       <DependentUpon>ListasLegendaPalette .cs</DependentUpon>
     </Compile>
@@ -144,9 +142,7 @@
     <Compile Include="MatEsquadriasPalette.Designer.cs">
       <DependentUpon>MatEsquadriasPalette.cs</DependentUpon>
     </Compile>
-    <Compile Include="MatLegendaPalette.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="MatLegendaPalette.cs" />
     <Compile Include="MatLegendaPalette.Designer.cs">
       <DependentUpon>MatLegendaPalette.cs</DependentUpon>
     </Compile>
@@ -203,12 +199,6 @@
     <Compile Include="ObraPalette.Designer.cs">
       <DependentUpon>ObraPalette.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
     <Compile Include="XMLDocs.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -260,9 +250,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ObraPalette.resx">
       <DependentUpon>ObraPalette.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
