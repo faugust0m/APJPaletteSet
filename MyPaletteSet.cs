@@ -39,7 +39,7 @@ namespace APJPaletteSet
             Add("Mat. Parede", _fourth);
             Add("Mat. Teto", _fifth);
             Add("Esquadrias", _sixth);
-            Add("Legendas", _seventh);
+            Add("Materiais", _seventh);
             Add("Fornecedores", _eighth);
             Add("Complementares", _ninth);
         }
@@ -73,7 +73,7 @@ namespace APJPaletteSet
             Add("Parede", _third);
             Add("Teto", _fourth);
             Add("Esquadrias", _fifth);
-            Add("Legenda", _sixth);
+            Add("Materiais", _sixth);
         }
     }
 }

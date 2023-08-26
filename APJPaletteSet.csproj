@@ -203,12 +203,6 @@
     <Compile Include="ObraPalette.Designer.cs">
       <DependentUpon>ObraPalette.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
     <Compile Include="XMLDocs.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -260,9 +254,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ObraPalette.resx">
       <DependentUpon>ObraPalette.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -109,8 +109,6 @@ namespace APJPaletteSet
                     textbox.Size = new Size(210, 20);
                     textbox.Location = new Point(75, textbox_0);
                     MyFormats.TextBoxFormat(textbox);
-
-                    MyFormats.TextBoxFormat(textbox);
                 }
 
                 foreach (var label in groupbox.Controls.OfType<Label>())
