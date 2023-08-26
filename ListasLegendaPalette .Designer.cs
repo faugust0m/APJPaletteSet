@@ -167,7 +167,7 @@ namespace APJPaletteSet
         }
         internal void FillComponent()
         {
-            this.label.Text = "Legenda";
+            this.label.Text = "Materiais";
 
             FillComp(listBox_106_0, "Mármore");
         }

@@ -283,18 +283,30 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(6, "comboBox_106_0"); //Atualiza lista legenda
                     MyCommands.ReloadComp(7, "comboBox_106_0"); //Atualiza combobox legenda
                     break;
-                //case "Espelho":
-                //    MyCommands.ReloadComp(6, "comboBox_86_15"); //Atualiza lista legenda
-                //    MyCommands.ReloadComp(7, "comboBox_86_15"); //Atualiza combobox legenda
-                //    break;
-                //case "Marcenaria":
-                //    MyCommands.ReloadComp(6, "comboBox_86_34"); //Atualiza lista legenda
-                //    MyCommands.ReloadComp(7, "comboBox_86_34"); //Atualiza combobox legenda
-                //    break;
-                //case "Revestimento":
-                //    MyCommands.ReloadComp(6, "comboBox_86_57"); //Atualiza lista legenda
-                //    MyCommands.ReloadComp(7, "comboBox_86_57"); //Atualiza combobox legenda
-                //    break;
+                case "Granito":
+                    MyCommands.ReloadComp(6, "comboBox_107_0"); //Atualiza lista legenda
+                    MyCommands.ReloadComp(7, "comboBox_107_0"); //Atualiza combobox legenda
+                    break;
+                case "Madeira":
+                    MyCommands.ReloadComp(6, "comboBox_108_0"); //Atualiza lista legenda
+                    MyCommands.ReloadComp(7, "comboBox_108_0"); //Atualiza combobox legenda
+                    break;
+                case "Pintura":
+                    MyCommands.ReloadComp(6, "comboBox_109_0"); //Atualiza lista legenda
+                    MyCommands.ReloadComp(7, "comboBox_109_0"); //Atualiza combobox legenda
+                    break;
+                case "Revestimento":
+                    MyCommands.ReloadComp(6, "comboBox_110_0"); //Atualiza lista legenda
+                    MyCommands.ReloadComp(7, "comboBox_110_0"); //Atualiza combobox legenda
+                    break;
+                case "PapelParede":
+                    MyCommands.ReloadComp(6, "comboBox_111_0"); //Atualiza lista legenda
+                    MyCommands.ReloadComp(7, "comboBox_111_0"); //Atualiza combobox legenda
+                    break;
+                case "Espelho":
+                    MyCommands.ReloadComp(6, "comboBox_112_0"); //Atualiza lista legenda
+                    MyCommands.ReloadComp(7, "comboBox_112_0"); //Atualiza combobox legenda
+                    break;
 
 
 
