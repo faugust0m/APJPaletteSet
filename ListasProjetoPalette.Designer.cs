@@ -47,12 +47,9 @@ namespace APJPaletteSet
 
             this.label_0_14.Name = "label_0_14";
             this.label_0_14.Text = "Novo:";
+            this.textBox_0_14.Name = "textBox_0_14";
             this.listBox_0_14.Name = "listBox_0_14";
             MyEvents.ListBox_Events(listBox_0_14, textBox_0_14, "Tipo");
-            this.textBox_0_14.Name = "textBox_0_14";
-            this.textBox_0_14.KeyPress += delegate (object sender, KeyPressEventArgs e) {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_0_14, "Tipo");
-            };
             #endregion
 
             int _padd = panel.HorizontalScroll.Enabled ? 10 : 0;
@@ -108,8 +105,6 @@ namespace APJPaletteSet
                     textbox_0 = textbox_0 + 24;
                     textbox.Size = new Size(210, 20);
                     textbox.Location = new Point(75, textbox_0);
-                    MyFormats.TextBoxFormat(textbox);
-
                     MyFormats.TextBoxFormat(textbox);
                 }
 

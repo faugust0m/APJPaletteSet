@@ -133,13 +133,9 @@ namespace APJPaletteSet
 
             this.label_75_0.Name = "label_75_0";
             this.label_75_0.Text = "Novo:";
+            this.textBox_75_0.Name = "textBox_75_0";
             this.listBox_75_0.Name = "listBox_75_0";
             MyEvents.ListBox_Events(listBox_75_0, textBox_75_0, "Esquadria");
-            this.textBox_75_0.Name = "textBox_75_0";
-            this.textBox_75_0.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_75_0, "Esquadria");
-            };
             #endregion
             #region  groupBox_75_1
             this.groupBox_75_1.Controls.Add(this.label_75_1);
@@ -152,13 +148,9 @@ namespace APJPaletteSet
 
             this.label_75_1.Name = "label_75_1";
             this.label_75_1.Text = "Novo:";
+            this.textBox_75_1.Name = "textBox_75_1";
             this.listBox_75_1.Name = "listBox_75_1";
             MyEvents.ListBox_Events(listBox_75_1, textBox_75_1, "EsquadriaPadrão");
-            this.textBox_75_1.Name = "textBox_75_1";
-            this.textBox_75_1.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_75_1, "EsquadriaPadrão");
-            };
             #endregion
             #region  groupBox_75_2
             this.groupBox_75_2.Controls.Add(this.label_75_2);
@@ -171,13 +163,9 @@ namespace APJPaletteSet
 
             this.label_75_2.Name = "label_75_2";
             this.label_75_2.Text = "Novo:";
+            this.textBox_75_2.Name = "textBox_75_2";
             this.listBox_75_2.Name = "listBox_75_2";
             MyEvents.ListBox_Events(listBox_75_2, textBox_75_2, "EsquadriaPintura");
-            this.textBox_75_2.Name = "textBox_75_2";
-            this.textBox_75_2.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_75_2, "EsquadriaPintura");
-            };
             #endregion
             #region  groupBox_75_3
             this.groupBox_75_3.Controls.Add(this.label_75_3);
@@ -190,13 +178,9 @@ namespace APJPaletteSet
 
             this.label_75_3.Name = "label_75_3";
             this.label_75_3.Text = "Novo:";
+            this.textBox_75_3.Name = "textBox_75_3";
             this.listBox_75_3.Name = "listBox_75_3";
             MyEvents.ListBox_Events(listBox_75_3, textBox_75_3, "EsquadriaCor");
-            this.textBox_75_3.Name = "textBox_75_3";
-            this.textBox_75_3.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_75_3, "EsquadriaCor");
-            };
             #endregion
             #region  groupBox_82_0
             this.groupBox_82_0.Controls.Add(this.label_82_0);
@@ -209,13 +193,9 @@ namespace APJPaletteSet
 
             this.label_82_0.Name = "label_82_0";
             this.label_82_0.Text = "Novo:";
+            this.textBox_82_0.Name = "textBox_82_0";
             this.listBox_82_0.Name = "listBox_82_0";
             MyEvents.ListBox_Events(listBox_82_0, textBox_82_0, "Vidro");
-            this.textBox_82_0.Name = "textBox_82_0";
-            this.textBox_82_0.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_82_0, "Vidro");
-            };
             #endregion
             #region  groupBox_83_0
             this.groupBox_83_0.Controls.Add(this.label_83_0);
@@ -228,13 +208,9 @@ namespace APJPaletteSet
 
             this.label_83_0.Name = "label_83_0";
             this.label_83_0.Text = "Novo:";
+            this.textBox_83_0.Name = "textBox_83_0";
             this.listBox_83_0.Name = "listBox_83_0";
             MyEvents.ListBox_Events(listBox_83_0, textBox_83_0, "Maçanetas");
-            this.textBox_83_0.Name = "textBox_83_0";
-            this.textBox_83_0.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_83_0, "Maçanetas");
-            };
             #endregion
             #region  groupBox_84_0
             this.groupBox_84_0.Controls.Add(this.label_84_0);
@@ -247,13 +223,9 @@ namespace APJPaletteSet
 
             this.label_84_0.Name = "label_84_0";
             this.label_84_0.Text = "Novo:";
+            this.textBox_84_0.Name = "textBox_84_0";
             this.listBox_84_0.Name = "listBox_84_0";
             MyEvents.ListBox_Events(listBox_84_0, textBox_84_0, "Ferragens");
-            this.textBox_84_0.Name = "textBox_84_0";
-            this.textBox_84_0.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_84_0, "Ferragens");
-            };
             #endregion
 
             int _padd = panel.HorizontalScroll.Enabled ? 10 : 0;
@@ -339,8 +311,6 @@ namespace APJPaletteSet
                     textbox_0 = textbox_0 + 24;
                     textbox.Size = new Size(210, 20);
                     textbox.Location = new Point(75, textbox_0);
-                    MyFormats.TextBoxFormat(textbox);
-
                     MyFormats.TextBoxFormat(textbox);
                 }
 

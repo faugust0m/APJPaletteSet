@@ -119,13 +119,9 @@ namespace APJPaletteSet
 
             this.label_5_3.Name = "label_5_3";
             this.label_5_3.Text = "Novo:";
+            this.textBox_5_3.Name = "textBox_5_3";
             this.listBox_5_3.Name = "listBox_5_3";
             MyEvents.ListBox_Events(listBox_5_3, textBox_5_3, "Dimensão");
-            this.textBox_5_3.Name = "textBox_5_3";
-            this.textBox_5_3.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_5_3, "Dimensão");
-            };
             #endregion
             #region  groupBox_47_4
             this.groupBox_47_4.Controls.Add(this.label_47_4);
@@ -138,13 +134,9 @@ namespace APJPaletteSet
 
             this.label_47_4.Name = "label_47_4";
             this.label_47_4.Text = "Novo:";
+            this.textBox_47_4.Name = "textBox_47_4";
             this.listBox_47_4.Name = "listBox_47_4";
             MyEvents.ListBox_Events(listBox_47_4, textBox_47_4, "Acabamento");
-            this.textBox_47_4.Name = "textBox_47_4";
-            this.textBox_47_4.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_47_4, "Acabamento");
-            };
             #endregion
             #region  groupBox_61_0
             this.groupBox_61_0.Controls.Add(this.label_61_0);
@@ -157,13 +149,9 @@ namespace APJPaletteSet
 
             this.label_61_0.Name = "label_61_0";
             this.label_61_0.Text = "Novo:";
+            this.textBox_61_0.Name = "textBox_61_0";
             this.listBox_61_0.Name = "listBox_61_0";
             MyEvents.ListBox_Events(listBox_61_0, textBox_61_0, "Teto");
-            this.textBox_61_0.Name = "textBox_61_0";
-            this.textBox_61_0.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_61_0, "Teto");
-            };
             #endregion
             #region  groupBox_61_1
             this.groupBox_61_1.Controls.Add(this.label_61_1);
@@ -176,13 +164,9 @@ namespace APJPaletteSet
 
             this.label_61_1.Name = "label_61_1";
             this.label_61_1.Text = "Novo:";
+            this.textBox_61_1.Name = "textBox_61_1";
             this.listBox_61_1.Name = "listBox_61_1";
             MyEvents.ListBox_Events(listBox_61_1, textBox_61_1, "TetoAbreviado");
-            this.textBox_61_1.Name = "textBox_61_1";
-            this.textBox_61_1.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_61_1, "TetoAbreviado");
-            };
             #endregion
             #region  groupBox_61_3
             this.groupBox_61_3.Controls.Add(this.label_61_3);
@@ -195,13 +179,9 @@ namespace APJPaletteSet
 
             this.label_61_3.Name = "label_61_3";
             this.label_61_3.Text = "Novo:";
+            this.textBox_61_3.Name = "textBox_61_3";
             this.listBox_61_3.Name = "listBox_61_3";
             MyEvents.ListBox_Events(listBox_61_3, textBox_61_3, "Altura");
-            this.textBox_61_3.Name = "textBox_61_3";
-            this.textBox_61_3.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_61_3, "Altura");
-            };
             #endregion
             #region  groupBox_61_6
             this.groupBox_61_6.Controls.Add(this.label_61_6);
@@ -214,13 +194,9 @@ namespace APJPaletteSet
 
             this.label_61_6.Name = "label_61_6";
             this.label_61_6.Text = "Novo:";
+            this.textBox_61_6.Name = "textBox_61_6";
             this.listBox_61_6.Name = "listBox_61_6";
             MyEvents.ListBox_Events(listBox_61_6, textBox_61_6, "FabricanteTeto");
-            this.textBox_61_6.Name = "textBox_61_6";
-            this.textBox_61_6.KeyPress += delegate (object sender, KeyPressEventArgs e)
-            {
-                MyEvents.TextBox_KeyPress(sender, e, listBox_61_6, "FabricanteTeto");
-            };
             #endregion
 
             int _padd = panel.HorizontalScroll.Enabled ? 10 : 0;
@@ -301,8 +277,6 @@ namespace APJPaletteSet
                     textbox_0 = textbox_0 + 24;
                     textbox.Size = new Size(210, 20);
                     textbox.Location = new Point(75, textbox_0);
-                    MyFormats.TextBoxFormat(textbox);
-
                     MyFormats.TextBoxFormat(textbox);
                 }
 
