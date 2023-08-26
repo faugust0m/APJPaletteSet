@@ -147,6 +147,7 @@ namespace APJPaletteSet
             this.space_3 = new Label();
             this.space_4 = new Label();
             this.space_5 = new Label();
+            this.space_6 = new Label();
 
             this.groupBox_0 = new GroupBox();
             this.label_106_0 = new Label();
@@ -825,7 +826,7 @@ namespace APJPaletteSet
             this.comboBox_107_4.Text = MyProject.GetDetailValue(107, 4);
             this.comboBox_107_5.Text = MyProject.GetDetailValue(107, 5);
 
-            foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+            foreach (var combobox in this.groupBox_1.Controls.OfType<ComboBox>())
                 combobox.Items.Clear();
             foreach (var item in XMLDocs.GetXMLDoc().Descendants("Granito"))
             {
@@ -846,7 +847,7 @@ namespace APJPaletteSet
             this.comboBox_108_4.Text = MyProject.GetDetailValue(108, 4);
             this.comboBox_108_5.Text = MyProject.GetDetailValue(108, 5);
 
-            foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+            foreach (var combobox in this.groupBox_2.Controls.OfType<ComboBox>())
                 combobox.Items.Clear();
             foreach (var item in XMLDocs.GetXMLDoc().Descendants("Madeira"))
             {
@@ -867,7 +868,7 @@ namespace APJPaletteSet
             this.comboBox_109_4.Text = MyProject.GetDetailValue(109, 4);
             this.comboBox_109_5.Text = MyProject.GetDetailValue(109, 5);
 
-            foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+            foreach (var combobox in this.groupBox_3.Controls.OfType<ComboBox>())
                 combobox.Items.Clear();
             foreach (var item in XMLDocs.GetXMLDoc().Descendants("Pintura"))
             {
@@ -888,7 +889,7 @@ namespace APJPaletteSet
             this.comboBox_110_4.Text = MyProject.GetDetailValue(110, 4);
             this.comboBox_110_5.Text = MyProject.GetDetailValue(110, 5);
 
-            foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+            foreach (var combobox in this.groupBox_4.Controls.OfType<ComboBox>())
                 combobox.Items.Clear();
             foreach (var item in XMLDocs.GetXMLDoc().Descendants("Revestimento"))
             {
@@ -909,7 +910,7 @@ namespace APJPaletteSet
             this.comboBox_111_4.Text = MyProject.GetDetailValue(111, 4);
             this.comboBox_111_5.Text = MyProject.GetDetailValue(111, 5);
 
-            foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+            foreach (var combobox in this.groupBox_5.Controls.OfType<ComboBox>())
                 combobox.Items.Clear();
             foreach (var item in XMLDocs.GetXMLDoc().Descendants("PapelParede"))
             {
@@ -930,7 +931,7 @@ namespace APJPaletteSet
             this.comboBox_112_4.Text = MyProject.GetDetailValue(112, 4);
             this.comboBox_112_5.Text = MyProject.GetDetailValue(112, 5);
 
-            foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+            foreach (var combobox in this.groupBox_6.Controls.OfType<ComboBox>())
                 combobox.Items.Clear();
             foreach (var item in XMLDocs.GetXMLDoc().Descendants("Espelho"))
             {
@@ -951,7 +952,7 @@ namespace APJPaletteSet
             this.comboBox_82_4.Text = MyProject.GetDetailValue(82, 4);
             this.comboBox_82_5.Text = MyProject.GetDetailValue(82, 5);
 
-            foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+            foreach (var combobox in this.groupBox_7.Controls.OfType<ComboBox>())
                 combobox.Items.Clear();
             foreach (var item in XMLDocs.GetXMLDoc().Descendants("Vidro"))
             {
@@ -984,7 +985,7 @@ namespace APJPaletteSet
                     }
                     break;
                 case "comboBox_107_0":
-                    foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+                    foreach (var combobox in this.groupBox_1.Controls.OfType<ComboBox>())
                         combobox.Items.Clear();
                     foreach (var item in XMLDocs.GetXMLDoc().Descendants("Granito"))
                     {
@@ -998,7 +999,7 @@ namespace APJPaletteSet
                     }
                     break;
                 case "comboBox_108_0":
-                    foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+                    foreach (var combobox in this.groupBox_2.Controls.OfType<ComboBox>())
                         combobox.Items.Clear();
                     foreach (var item in XMLDocs.GetXMLDoc().Descendants("Madeira"))
                     {
@@ -1012,7 +1013,7 @@ namespace APJPaletteSet
                     }
                     break;
                 case "comboBox_109_0":
-                    foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+                    foreach (var combobox in this.groupBox_3.Controls.OfType<ComboBox>())
                         combobox.Items.Clear();
                     foreach (var item in XMLDocs.GetXMLDoc().Descendants("Pintura"))
                     {
@@ -1026,7 +1027,7 @@ namespace APJPaletteSet
                     }
                     break;
                 case "comboBox_110_0":
-                    foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+                    foreach (var combobox in this.groupBox_4.Controls.OfType<ComboBox>())
                         combobox.Items.Clear();
                     foreach (var item in XMLDocs.GetXMLDoc().Descendants("Revestimento"))
                     {
@@ -1040,7 +1041,7 @@ namespace APJPaletteSet
                     }
                     break;
                 case "comboBox_111_0":
-                    foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+                    foreach (var combobox in this.groupBox_5.Controls.OfType<ComboBox>())
                         combobox.Items.Clear();
                     foreach (var item in XMLDocs.GetXMLDoc().Descendants("PapelParede"))
                     {
@@ -1054,7 +1055,7 @@ namespace APJPaletteSet
                     }
                     break;
                 case "comboBox_112_0":
-                    foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+                    foreach (var combobox in this.groupBox_6.Controls.OfType<ComboBox>())
                         combobox.Items.Clear();
                     foreach (var item in XMLDocs.GetXMLDoc().Descendants("Espelho"))
                     {
@@ -1068,7 +1069,7 @@ namespace APJPaletteSet
                     }
                     break;
                 case "comboBox_82_0":
-                    foreach (var combobox in this.groupBox_0.Controls.OfType<ComboBox>())
+                    foreach (var combobox in this.groupBox_7.Controls.OfType<ComboBox>())
                         combobox.Items.Clear();
                     foreach (var item in XMLDocs.GetXMLDoc().Descendants("Vidro"))
                     {

@@ -153,23 +153,43 @@ namespace APJPaletteSet
         }
 
 
-        //Eventos gerais da lista
+        //Eventos exclusivos das listas
         internal static void ListBox_Events(ListBox listbox, TextBox textbox, string _group)
         {
+            //Atualiza a caixa de texto de acordo com a seleção da lista
             listbox.SelectedIndexChanged += delegate (object sender, EventArgs e) {
                 ListBox_SelectedIndexChanged(sender, e, textbox);
             };
+            //Apaga o item selecionado na lista
             listbox.KeyDown += delegate (object sender, KeyEventArgs e) {
                 ListBox_KeyDown(sender, e, textbox, _group);
             };
+            //Limpa a seleção da lista
+            listbox.LostFocus += delegate (object sender, EventArgs e)
+            {
+                ListBox_LostFocus(sender, e);
+            };
+            //Atualiza a lista abaixo da caixa
+            textbox.KeyPress += delegate (object sender, KeyPressEventArgs e) {
+                TextBox_KeyPress(sender, e, listbox, _group);
+            };
+            //Limpa a caixa de texto sobre a lista
+            textbox.LostFocus += delegate (object sender, EventArgs e) {
+                TextBox_LostFocus(sender, e);
+            };
         }
-
         //Eventos específicos da lista
 
         internal static void ListBox_SelectedIndexChanged(object sender, EventArgs e, TextBox textbox)
         {
-            string _text = (sender as ListBox).SelectedItem.ToString();
-            textbox.Text = _text;
+            try
+            {
+                string _text = (sender as ListBox).SelectedItem.ToString();
+                textbox.Text = _text;
+            }
+            catch (NullReferenceException) {
+                textbox.Text = "";
+            }
         }
         internal static void ListBox_KeyDown(object sender, KeyEventArgs e, TextBox textbox, string _group)
         {
@@ -181,9 +201,41 @@ namespace APJPaletteSet
                 SwitchGroup(_group);
             }
         }
+        internal static void ListBox_LostFocus(object sender, EventArgs e)
+        {
+            (sender as ListBox).SelectedIndex = -1;
+        }
+
+        internal static void TextBox_KeyPress(object sender, KeyPressEventArgs e, ListBox listbox, string _group)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                string _value = (sender as TextBox).Text;
+                (sender as TextBox).BackColor = System.Drawing.SystemColors.Menu;
+
+                if (_value != "")
+                {
+                    if (XMLDocs.ViewXMLDoc(_group, _value) == "Existe")
+                    {
+                        (sender as TextBox).Text = "";
+                    }
+                    else
+                    {
+                        XMLDocs.AddXMLDoc(_group, _value);
+                        SwitchGroup(_group);
+                    }
+                }
+            }
+        }
+        internal static void TextBox_LostFocus(object sender, EventArgs e)
+        {
+            //Limpa a caixa de texto sobre as lista
+            (sender as TextBox).BackColor = System.Drawing.SystemColors.Menu;
+        }
 
         internal static void SwitchGroup(string _group)
         {
+            //Vincula a atualização das lists e comboboxes ao tipo de material
             switch (_group)
             {
 
@@ -267,6 +319,7 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(5, "comboBox_82_0"); //Atualiza lista esquadrias
                     MyCommands.ReloadComp(6, "comboBox_82_0"); //Atualiza lista legenda
                     MyCommands.ReloadComp(6, "comboBox_82_0"); //Atualiza combobox esquadrias
+                    MyCommands.ReloadComp(7, "comboBox_82_0"); //Atualiza combobox legenda
                     break;
                 case "Maçanetas":
                     MyCommands.ReloadComp(5, "comboBox_83_0"); //Atualiza lista esquadrias
@@ -329,24 +382,6 @@ namespace APJPaletteSet
                     MyCommands.ReloadComp(4, "comboBox_47_3"); //Atualiza combobox parede
                     MyCommands.ReloadComp(5, "comboBox_61_4"); //Atualiza combobox teto
                     break;
-            }
-        }
-        internal static void TextBox_KeyPress(object sender, KeyPressEventArgs e, ListBox listbox, string _group)
-        {
-            if (e.KeyChar == (char)13)
-            {
-                string _value = (sender as TextBox).Text;
-                (sender as TextBox).BackColor = System.Drawing.SystemColors.Menu;
-
-                if (XMLDocs.ViewXMLDoc(_group, _value) == "Existe")
-                {
-                    (sender as TextBox).Text = "";
-                }
-                else
-                {
-                    XMLDocs.AddXMLDoc(_group, _value);
-                    SwitchGroup(_group);
-                }
             }
         }
     }
