@@ -55,14 +55,6 @@ namespace APJPaletteSet
             space.Size = new Size(300, 20);
             space.Location = new Point(0, 0);
         }
-        //internal static void CheckBoxFormat(CheckBox checkbox)
-        //{
-        //    checkbox.Anchor = ((AnchorStyles)((
-        //        AnchorStyles.Top |
-        //        AnchorStyles.Right)));
-        //    checkbox.AutoSize = true;
-        //    checkbox.UseVisualStyleBackColor = true;
-        //}
         internal static void ComboBoxFormat(ComboBox combobox)
         {
             combobox.TabIndex = 1000;
