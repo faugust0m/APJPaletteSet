@@ -225,6 +225,10 @@ namespace APJPaletteSet
                         SwitchGroup(_group);
                     }
                 }
+                else
+                {
+                    (sender as TextBox).Text = "";
+                }
             }
         }
         internal static void TextBox_LostFocus(object sender, EventArgs e)
